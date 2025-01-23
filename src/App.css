@@ -1,0 +1,146 @@
+/* Body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #6dd5fa, #2980b9);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Weather card styling */
+.weather-card {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+/* Search input styling */
+.search input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  color: #333;
+}
+
+/* Weather information */
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.city {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.description {
+  font-size: 2rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Weather details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 40px;
+}
+
+.details .col {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.details .col img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.details .col .info {
+  text-align: left;
+}
+
+.details .col .info p:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.details .col .info p:last-child {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+/* AQI Styling */
+.aqi {
+  background: #f1c40f;
+  color: #2c3e50;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.aqi p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .weather-card {
+    padding: 15px;
+  }
+
+  .temp {
+    font-size: 2.5rem;
+  }
+
+  .col img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .weather-card {
+    width: 100%;
+  }
+
+  .temp {
+    font-size: 2rem;
+  }
+}
